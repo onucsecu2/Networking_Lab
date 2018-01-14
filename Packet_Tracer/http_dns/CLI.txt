@@ -1,0 +1,83 @@
+CLI:
+Router(config)#exit
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+Router#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int fa0/0
+Router(config-if)#ip address 192.168.1.2 255.255.255.0
+Router(config-if)#no shut
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+	
+Router(config)#exit
+
+Router>show ip int brief
+Interface              IP-Address      OK? Method Status                Protocol 
+FastEthernet0/0        192.168.1.2     YES manual up                    up 
+FastEthernet1/0        unassigned      YES unset  administratively down down 
+Serial2/0              unassigned      YES unset  administratively down down 
+Serial3/0              unassigned      YES unset  administratively down down 
+FastEthernet4/0        unassigned      YES unset  administratively down down 
+FastEthernet5/0        unassigned      YES unset  administratively down down
+
+Router>exit
+
+
+Router>en
+Router#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int fa1/0
+Router(config-if)#ip address 192.168.2.1 255.255.255.0
+Router(config-if)#no shut
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet1/0, changed state to up
+
+
+
+Router(config)#exit
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+en
+Router#show ip int brief
+Interface              IP-Address      OK? Method Status                Protocol 
+FastEthernet0/0        192.168.1.2     YES manual up                    up 
+FastEthernet1/0        192.168.2.1     YES manual up                    up 
+Serial2/0              unassigned      YES unset  administratively down down 
+Serial3/0              unassigned      YES unset  administratively down down 
+FastEthernet4/0        unassigned      YES unset  administratively down down 
+FastEthernet5/0        unassigned      YES unset  administratively down down
+Router# 
+
+
+
+
+
+
+
+
+Router con0 is now available
+
+
+
+
+
+
+Press RETURN to get started.
+
+
+
+
+
+
+
+
+
+
+
+
