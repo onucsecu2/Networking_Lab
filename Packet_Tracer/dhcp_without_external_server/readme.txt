@@ -23,7 +23,7 @@ DNS(Click on it)>Desktop>IP configuaration
                           >DNS > [ DNS service Turn ON][Give a 'Name'=> 'web er nam ekta dibi','Type'=>'A record','Address'=> 'web server tar Ip',then Add]
                           >DHCP> Service OFF
 Router>CLI
-[NOTE:In generic Router, there will be only two fastethernet port. But I have used 3 port on the router. so click on the router>Zoom in>uppe-right corner of the Router, a switch will be seen.Turn it off>select PT-ROUTER-NM-1CFE from left panel>A black port is seen in the lower right corner of the window.Drag it to the router's Blank Port. DONT REMEMBER TO TURN ON THE SWITCH U have TURNED OFF]
+[NOTE:In generic Router, there are only two fastethernet port. But I have used 3 port on the router. so click on the router>Zoom in>uppe-right corner of the Router, a switch will be seen.Turn it off>select PT-ROUTER-NM-1CFE from left panel>A black port is seen in the lower right corner of the window.Drag it to the router's Blank Port. DONT REMEMBER TO TURN ON THE SWITCH U have TURNED OFF]
 **Then follow the CLI.txt provided in the Folder
 
 
