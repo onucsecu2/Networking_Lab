@@ -1,0 +1,35 @@
+
+Ami amar fastethernet onusare bosaici..IP gulao amar moto kore bosaici..[be careful on subnetting]
+
+CLI:
+*****Router set up
+Router> en
+Router#conf
+Router(config)#int fa0/0
+Router(config-if)#ip address 192.168.1.1 255.255.255.0
+Router(config-if)#no shut
+Router(config-if)#exit
+Router(config)#int fa1/0 [eivabe router er input-output fastethernet cable gular address assign kore dite hobe]
+Router(config-if)#ip address 192.168.2.1 255.255.255.0
+Router(config-if)#no shut
+Router(config-if)#exit
+Router(config)#int fa6/0
+Router(config-if)#ip address 192.168.3.1 255.255.255.0
+Router(config-if)#no shut
+Router(config-if)#exit
+Router(config)#exit
+Router#wr
+
+
+*****configure for dhcp
+Router# conf
+Router(config)#ip dhcp pool Adel
+Router(config-dhcp)#network 192.168.1.0 255.255.255.0 [[Note: last er bit e 0 rakha hoiche]]
+Router(config-dhcp)#default-router 192.168.1.1
+Router(config-dhcp)#exit
+Router(config)#ip dhcp excluded-address 192.168.1.1
+Router(config)#exit
+Router# wr
+
+
+

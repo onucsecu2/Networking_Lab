@@ -1,8 +1,7 @@
-***router configure
 Router> en
 Router#conf
 Router(config)#int fa0/0
-Router(config-if)#ip address 192.168.1.2 255.255.255.0
+Router(config-if)#ip address 192.168.1.3 255.255.255.0
 Router(config-if)#no shut
 Router(config-if)#exit
 Router(config)#int fa1/0 [eivabe router er input-output fastethernet cable gular address assign kore dite hobe]
@@ -11,5 +10,14 @@ Router(config-if)#no shut
 Router(config-if)#exit
 Router(config)#exit
 Router#wr
+
+
+
+
+
+
+
+
+
 
 
