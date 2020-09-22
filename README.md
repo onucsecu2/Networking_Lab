@@ -5,4 +5,4 @@ One of them is, the server code and the client code will be run only Once on the
 Other problem may be occured in File_Server/File_Client as i didn't  use Inet() function. If this happen,then Use Inet function to assign Port
 
 
-www.avast.com/en-us/recommend?tvar=oa-4052-v3-b&tag=dc841f5b-37ad-471a-908b-76d2a19afb4c
+
